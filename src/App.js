@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import { About } from "./pages/About";
 import { Articles } from "./pages/Articles";
 import { Home } from "./pages/Home";
@@ -8,7 +8,7 @@ import { Home } from "./pages/Home";
 // Server side rendering
 function App() {
   return (
-    <BrowserRouter>
+    <div>
       <h1>Server Side Rendering Example</h1>
       <ul>
         <li>
@@ -26,7 +26,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/articles" element={<Articles />} />
       </Routes>
-    </BrowserRouter>
+    </div>
   );
 }
 
